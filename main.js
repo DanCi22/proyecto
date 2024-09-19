@@ -18,3 +18,18 @@ copiar.addEventListener('click',()=>{
     alert('Password Copiado!');
 
 });
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+
+
+    let arreglo = [];
+
+    if(mayus.checked){arreglo.push(mayusculas);}
+    if(minus.checked){arreglo.push(minusculas);}
+    if(numeros.checked){arreglo.push(fnumeros);}
+    if(simbolos.checked){arreglo.push(fsimbolos);}
+
+    generar(arreglo)
+
+});
