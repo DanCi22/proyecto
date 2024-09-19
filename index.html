@@ -28,5 +28,29 @@
                 content_paste
             </span>
         </div>
+        <form action="" id="form">
+            <div class="campo">
+                <label for="numero">Cantidad de caracteres</label>
+                <input type="number" name="numero" id="numero" value="20" min="6" max="20">
+            </div>
+            <div class="campo">
+                <label for="mayus">Incluir Mayusculas</label>
+                <input type="checkbox" name="mayus" id="mayus" checked>
+            </div>
+            <div class="campo">
+                <label for="minus">Incluir Minusculas</label>
+                <input type="checkbox" name="minus" id="minus" checked>
+            </div>
+            <div class="campo">
+                <label for="numeros">Incluir Numeros</label>
+                <input type="checkbox" name="numeros" id="numeros" checked>
+            </div>
+            <div class="campo">
+                <label for="simbolos">Incluir Simbolos</label>
+                <input type="checkbox" name="simbolos" id="simbolos" checked>
+            </div>
+            <input type="submit" class="enviar" value="Generar password">
+        </form>
+
 
 
