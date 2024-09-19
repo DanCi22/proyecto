@@ -33,3 +33,17 @@ form.addEventListener('submit',(e)=>{
     generar(arreglo)
 
 });
+
+function generar(a){
+
+    let palabra = '';
+
+    for (let index = 0; index < numero.value; index++) {
+        
+        palabra += a[Math.floor(Math.random()*a.length)]();
+        
+    }
+
+    password.innerText = palabra;
+
+}
