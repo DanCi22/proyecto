@@ -51,3 +51,8 @@ function generar(a){
 function mayusculas() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
+
+function minusculas() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
