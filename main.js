@@ -7,10 +7,10 @@ const minus = document.getElementById('minus');
 const numeros = document.getElementById('numeros');
 const simbolos = document.getElementById('simbolos');
 
-copiar.addEventListener('click',()=>{
+copiar.addEventListener('click', () => {
 
     let pass = password.innerText;
-    if(!password){
+    if (!password) {
         return;
     }
 
@@ -19,29 +19,29 @@ copiar.addEventListener('click',()=>{
 
 });
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 
 
     let arreglo = [];
 
-    if(mayus.checked){arreglo.push(mayusculas);}
-    if(minus.checked){arreglo.push(minusculas);}
-    if(numeros.checked){arreglo.push(fnumeros);}
-    if(simbolos.checked){arreglo.push(fsimbolos);}
+    if (mayus.checked) { arreglo.push(mayusculas); }
+    if (minus.checked) { arreglo.push(minusculas); }
+    if (numeros.checked) { arreglo.push(fnumeros); }
+    if (simbolos.checked) { arreglo.push(fsimbolos); }
 
     generar(arreglo)
 
 });
 
-function generar(a){
+function generar(a) {
 
     let palabra = '';
 
     for (let index = 0; index < numero.value; index++) {
-        
-        palabra += a[Math.floor(Math.random()*a.length)]();
-        
+
+        palabra += a[Math.floor(Math.random() * a.length)]();
+
     }
 
     password.innerText = palabra;
